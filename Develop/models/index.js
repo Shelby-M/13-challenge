@@ -3,7 +3,6 @@ const Product = require("./Product");
 const Category = require("./Category");
 const Tag = require("./Tag");
 const ProductTag = require("./ProductTag");
-const { transformGeom2D } = require("ol/geom/SimpleGeometry");
 
 // Products belongsTo Category
 Product.belongsTo(Category, { foreignKey: "category_id" });
@@ -16,7 +15,7 @@ Product.belongsToMany(Tag, {
   foreignKey: "product_id",
 });
 // Tags belongToMany Products (through ProductTag)
-transformGeom2D.belongsToMany(Products, {
+Tag.belongsToMany(Product, {
   through: ProductTag,
   as: "tag_products",
   foreignKey: "tag_id",

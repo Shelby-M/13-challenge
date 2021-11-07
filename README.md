@@ -22,6 +22,7 @@
 This is a back end for an e-commerce website
 
 please follow this link for a walkthrough video of insomnia req : https://watch.screencastify.com/v/TRYIH8uguGoidwOoL8Yo
+please follow this link for a walkthrough video : https://watch.screencastify.com/v/0Jj3oHVLNBC8QkQiCsiy
 
 
 
